@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 <head>
   <meta charset="utf-8">
   <meta name="description" content="jQuery homework">
-  <title>jQuery Assignment</title>
-<script src="jquery.js" type="text/javascript"></script>
+  <title>Homework 2 - jQuery Assignment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script> -->
+  <script>
+  $(document).ready(function(){
+    $("h2").attr( "id", function( index ) {
+      return "cert" + index;
+    });
+
+    var $list = "<ul>";
+    $("h2").each(function( index ) {
+      $list += "<li><a href='#cert" + index + "'>" + $( this ).text() + "</a></li>";
+    });
+    $list += "</ul>";
+
+    $(".content h1").after($list);
+  });
+  </script>
 </head>
 <body>
 <div class="content">
@@ -55,5 +72,7 @@ support and even with some basis of help desk or technical service management. <
 applying some basic principles of network security. </p>
 <hr/>
 </div>
+
+
 </body>
 </html>
