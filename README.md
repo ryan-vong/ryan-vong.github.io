@@ -1,2 +1,2 @@
 # ryan-vong.github.io
-JavaScript Libraries/Frameworks
+/javascript - JavaScript Libraries/Frameworks
